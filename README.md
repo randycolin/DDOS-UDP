@@ -12,3 +12,7 @@ chmod +x Gofuck
 // 输入相应参数开始执行例如：./Gofuck 127.0.0.1 80 120
 ./Gofuck <IP地址> <端口> <攻击持续时间>
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=randycolin/DDOS-UDP&type=Date)](https://star-history.com/#randycolin/DDOS-UDP&Date)
