@@ -1,3 +1,7 @@
+
+### 经过长期收集反馈我们得知很多测试者用的都是1C1G的VPS在进行发包测试，所以我们增加了一个把硬件资源利用到极致的C方案，对比GO方案差距在于C的硬件效率更高，占用更低，发包效率更高。
+
+
 ### Gofuck声明：
 
 - Gofuck是一个简单暴力的UDP发包程序，能快速利用全部带宽。
@@ -6,11 +10,12 @@
 ### 使用方法：
 ```shell
 // 下载程序
-wget https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.0/Gofuck
+wget https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck
 // 赋予执行权限
 chmod +x Gofuck
-// 输入相应参数开始执行例如：./Gofuck 127.0.0.1 80 120
-./Gofuck <IP地址> <端口> <攻击持续时间>
+// 输入相应参数开始执行例如：./Gofuck 127.0.0.1 80
+./Gofuck <IP地址> <端口>
+- 按 CTRL+C 停止程序
 ```
 
 ## Star History
