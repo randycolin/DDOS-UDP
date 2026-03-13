@@ -12,9 +12,9 @@
 // 下载程序
 wget https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck
 // 赋予执行权限
-chmod +x Gofuck
-// 输入相应参数开始执行例如：./Gofuck 127.0.0.1 80
-./Gofuck <IP地址> <端口>
+chmod +x GoFuck
+// 输入相应参数开始执行例如：./GoFuck 127.0.0.1 80
+./GoFuck <IP地址> <端口>
 - 按 CTRL+C 停止程序
 ```
 
