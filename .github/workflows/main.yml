@@ -1,0 +1,45 @@
+name: Run Bot with Binary
+
+on:
+  push:
+    branches: [ "fuck" ]
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout repository
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Install GCC
+    - name: Install GCC
+      run: |
+        sudo apt update
+        sudo apt install -y build-essential gcc
+
+    # ✅ Build binary FIRST
+    - name: Compile binary
+      run: |
+        gcc GoFuck.c.c -O2 -Wall -o bhai
+        chmod +x bhai
+        ls -l
+
+    # Install Python
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    # Install Python packages
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyTelegramBotAPI
+
+    # ✅ Run Python script AFTER build
+    - name: Run py.py
+      run: |
+        python py.py
